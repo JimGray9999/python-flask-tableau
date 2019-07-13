@@ -24,7 +24,7 @@ chardet==3.0.4
 chromedriver==2.24.1
 click==6.7
 cloudpickle==0.5.2
-clyent==1.2.2
+clyent==1.2.1
 colorama==0.3.9
 conda==4.4.10
 conda-build==3.4.1
