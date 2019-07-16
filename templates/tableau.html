@@ -1,15 +1,16 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Basic Embed</title>
+  <title>Dynamic Load</title>
   <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script src="{{ url_for('static', filename='./js/app.js')}}"></script>
 </head>
-
-<body onload="initViz();">
-  <div class="tableauPlaceholder" style="width:800px; height:700px; position: relative"
-  id = 'viz1563032289773'>
+<body onload="createViz(0);">
+  <div id="vizContainer" style="width:800px; height:700px;"></div>
+  <div id="controls" style="padding:20px;">
+    <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+    <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
   </div>
 </body>
-
 </html>
+
