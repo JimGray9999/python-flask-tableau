@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Load</title>
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script src="/templates/./js/app.js"></script>
+</head>
+<body onload="createViz(0);">
+  <div id="vizContainer" style="width:800px; height:700px;"></div>
+  <div id="controls" style="padding:20px;">
+    <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+    <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
+  </div>
+</body>
+</html>
