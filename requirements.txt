@@ -30,7 +30,6 @@ clyent
 colorama==0.4.1
 conda
 conda-build
-conda-verify
 contextlib2==0.5.5
 cryptography==2.6.1
 cycler==0.10.0
