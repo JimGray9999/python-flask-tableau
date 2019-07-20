@@ -5,3 +5,4 @@ Flask-PyMongo
 Flask-SQLAlchemy
 Frozen-Flask
 Freezer
+gunicorn
