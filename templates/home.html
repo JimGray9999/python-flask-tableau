@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My flask netlify page</title>
+  <title>Dynamic Load</title>
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script src="{{ url_for('static', filename='./js/app.js')}}"></script>
 </head>
-<body>
-  <div>
-    <h1>here is my page</h1>
-    <p>here is my paragraph.</p>
+<body onload="createViz(0);">
+  <div id="vizContainer" style="width:800px; height:700px;"></div>
+  <div id="controls" style="padding:20px;">
+    <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+    <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
   </div>
 </body>
 </html>
