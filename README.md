@@ -1,4 +1,6 @@
-# testing a flask/gunicorn deploy to Heroku with a Tableau Public Dashboard
+# Python Flask Tableau
+
+Basic app for serving a Tableu 
 
 requirements list:
 
