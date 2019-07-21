@@ -1,6 +1,6 @@
 # Python Flask Tableau
 
-Basic app for serving a Tableu 
+Basic app for serving a Tableu Public Workbook
 
 requirements list:
 
